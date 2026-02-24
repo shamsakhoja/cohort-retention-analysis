@@ -42,12 +42,57 @@ The simulation incorporates lifecycle decay and behavioral segmentation to resem
     - Funding segment
     - Activation timing
 
+---
+## Cohort Retention Analysis
+
+![Cohort Heatmap](images/cohort_heatmap.png)
+
+**Key Observations:**
+- Retention declines sharply between Month 1 and Month 3
+- Month 3 retention stabilizes around 37% to 40%
+- Early lifecycle is the highest impact window
+
+---
+## Average Retention Curve
+
+![Retention Curve](images/retention_curve.png)
+
+**Interpretation:**
+- Largest drop occurs in Months 1 to 3
+- Improving early retention would shift the entire lifecycle curve
+
 ## Key Insights
 1. Retention decay is front-loaded (Months 1–3)
 2. Direct deposit is a powerful retention accelerator
 3. Early activation (< = 7 days) yields highest retention
 4. Referral and organic channels drive higher-quality cohorts
 5. No-funding users churn rapidly and potentially dilute long-term LTV
+
+---
+
+## Activation Timing & Month 3 Retention
+
+![Activation Impact](images/activation_bucket.png)
+
+**Month 3 Retention by Activation Bucket:**
+- 0–7 days → 77%
+- 8–14 days → 71%
+- 15–30 days → 65%
+- No funding → 12%
+
+Earlier activation leads to higher Month 3 retention.
+
+---
+## Retention by Funding Segment
+
+![Funding Segment Retention](images/funding_retention.png)
+
+- Direct deposit users retain significantly better across all months
+- Deposit-only users show moderate retention
+- No funding users churn rapidly
+
+Funding behavior is a primary retention driver.
+
 
 ## Decision & Rollout Plan (Evidence-Based)
 
@@ -57,14 +102,8 @@ Prioritize initiatives that increase early funding activation, with the goal of 
 
 ### Why (Backed by Results)
 
-- Month 3 retention is strongly linked to activation timing:
-    - 0–7 days  >>  77%
-    - 8–14 days >>  71%
-    - 15–30 days >> 65%
-    - No funding >> 12%
-
+- Month 3 retention is strongly linked to activation timing shown above.
 - Funding segment differences are material (direct deposit users retain best; no-funding churns fastest).
-
 - Median time to first funding is 11 days, suggesting there is a realistic window to improve early activation with onboarding + lifecycle nudges.
 
 ## Guardrails to Monitor
