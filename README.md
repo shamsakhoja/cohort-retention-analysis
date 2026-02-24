@@ -16,7 +16,7 @@ User retention declines rapidly after signup. The business needs to:
 
 - Quantify retention by cohort
 - Understand early drop-off behavior
-- Identify activation events (“aha moments”)
+- Identify activation events (related to real usuage/ funding)
 - Determine which acquisition channels drive higher quality users
 - Prioritize product and lifecycle initiatives to improve Month 3 retention
 
@@ -45,7 +45,7 @@ The simulation incorporates lifecycle decay and behavioral segmentation to resem
 ---
 ## Cohort Retention Analysis
 
-![Cohort Heatmap](images/cohort_heatmap.png)
+![Cohort Heatmap](figures/cohort_heatmap.png)
 
 **Key Observations:**
 - Retention declines sharply between Month 1 and Month 3
@@ -55,7 +55,7 @@ The simulation incorporates lifecycle decay and behavioral segmentation to resem
 ---
 ## Average Retention Curve
 
-![Retention Curve](images/retention_curve.png)
+![Retention Curve](figures/retention_curve.png)
 
 **Interpretation:**
 - Largest drop occurs in Months 1 to 3
@@ -72,7 +72,7 @@ The simulation incorporates lifecycle decay and behavioral segmentation to resem
 
 ## Activation Timing & Month 3 Retention
 
-![Activation Impact](images/activation_bucket.png)
+![Activation Impact](figures/activation_bucket.png)
 
 **Month 3 Retention by Activation Bucket:**
 - 0–7 days → 77%
@@ -85,7 +85,7 @@ Earlier activation leads to higher Month 3 retention.
 ---
 ## Retention by Funding Segment
 
-![Funding Segment Retention](images/funding_retention.png)
+![Funding Segment Retention](figures/funding_retention.png)
 
 - Direct deposit users retain significantly better across all months
 - Deposit-only users show moderate retention
