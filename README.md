@@ -13,6 +13,12 @@ The analysis demonstrates:
 
 This framework mirrors retention analytics used by fintech or NEO Banks.
 
+## Key Result
+
+The cohort retention heatmap highlights how retention decays over time and how early lifecycle behavior influences long-term engagement.
+
+![Cohort Retention Heatmap](figures/cohort_heatmap.png)
+
 ## Business Problem
 
 User retention declines rapidly after signup. The business needs to:
