@@ -27,8 +27,8 @@ FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def main() -> None:
-    from google.colab import drive
-    drive.mount('/content/drive')
+    #from google.colab import drive
+    #drive.mount('/content/drive')
 
     # -----------------------------
     # Notebook logic
@@ -453,8 +453,8 @@ def main() -> None:
     data_path = os.path.join(project_path, "data")
     os.makedirs(data_path, exist_ok=True)
 
-    users_file = os.path.join(data_path, "{str(DATA_DIR / "users.csv")}")
-    events_file = os.path.join(data_path, "{str(DATA_DIR / "events.csv")}")
+    users_file = DATA_DIR / "users.csv"
+    events_file = DATA_DIR / "events.csv"
 
     users.to_csv(users_file, index=False)
     events.to_csv(events_file, index=False)
