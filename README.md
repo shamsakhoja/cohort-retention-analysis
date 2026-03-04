@@ -1,4 +1,7 @@
 # Cohort Retention & Activation Analysis
+
+##
+
 ## Executive Summary
 This project simulates user-level behavioral data to perform a full cohort-based retention analysis. The objective is to understand early lifecycle patterns that drive long-term retention and identify activation behaviors that significantly impact Month 3 retention.
 
@@ -19,6 +22,8 @@ User retention declines rapidly after signup. The business needs to:
 - Identify activation events (related to real usuage/ funding)
 - Determine which acquisition channels drive higher quality users
 - Prioritize product and lifecycle initiatives to improve Month 3 retention
+  
+Answering these questions helps product and growth teams prioritize onboarding improvements,activation incentives, and acquisition strategies that drive higher retention.
 
 ## Dataset & Simulation
 The project uses synthetic user-level event data with:
@@ -130,24 +135,91 @@ Rollback rule: Pause or revert if Month 3 retention declines beyond a defined th
 - Channel-specific onboarding messaging (paid vs organic vs referral)
 
 ## Tools & Technologies
-Python (core analysis), NumPy (statistical computation), Pandas (data manipulation), Matplotlib/Seaborn (visualization)
+- **Python** – core analysis and simulation
+- **Pandas** – data manipulation and cohort table construction
+- **NumPy** – statistical simulation and lifecycle modeling
+- **Matplotlib / Seaborn** – retention and segmentation visualization
+- **Git & GitHub** – version control and reproducible analytics workflow
 
 ## Repository Structure
 
-| File                       | Purpose                                                                                                 |
-| -------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `01_data_generation.ipynb` | Simulates user-level lifecycle, acquisition channels, funding behavior, and retention decay patterns    |
-| `02_cohort_analysis.ipynb` | Performs cohort retention analysis, activation segmentation, funding impact analysis, and visualization |
-
+```
+cohort-retention-analysis
+│
+├── src
+│   ├── data_generation.py
+│   └── cohort_analysis.py
+│
+├── notebooks
+│   ├── 01_data_generation.ipynb
+│   └── 02_cohort_analysis.ipynb
+│
+├── data
+│   └── (generated locally)
+│
+├── figures
+│   ├── cohort_heatmap.png
+│   ├── retention_curve.png
+│   ├── activation_bucket.png
+│   └── funding_retention.png
+│
+└── README.md
+```
 
 ## Reproducibility
-To reproduce the full analysis:
-1. Run 01_data_generation.ipynb to generate the synthetic user dataset
-2. Run 02_cohort_analysis.ipynb to compute cohort tables and generate all visual outputs
-All results, retention curves, segmentation comparisons, and activation metrics are generated programmatically.
 
+To reproduce the full analysis locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shamsakhoja/cohort-retention-analysis.git
+cd cohort-retention-analysis
+```
+
+### 2. Install required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Generate the synthetic dataset
+
+```bash
+python src/data_generation.py
+```
+
+This script simulates user-level lifecycle events and generates the dataset in:
+
+```
+data/
+```
+
+### 4. Run the cohort retention analysis
+
+```bash
+python src/cohort_analysis.py
+```
+
+This script computes cohort retention tables, activation segmentation, and generates all visualizations.
+
+All output figures will be saved in:
+
+```
+figures/
+```
+
+### Notes
+
+- The notebooks in the `notebooks/` folder show the original exploratory workflow.
+- The `src/` scripts provide a reproducible pipeline for generating the dataset and running the full analysis.
 ## Author
-Shamsa Khoja
-MS Business Analytics, University of Louisville (2025)
-www.linkedin.com/in/shamsakhoja
-www.github.com/shamsakhoja
+**Shamsa Khoja**  
+MS Business Analytics Candidate – University of Louisville  
+LinkedIn: https://www.linkedin.com/in/shamsakhoja  
+GitHub: https://github.com/shamsakhoja
+
+Interested in roles in:
+- Growth / Lifecycle Analytics
+- Product Analytics
+- Marketing Analytics
